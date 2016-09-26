@@ -39,10 +39,9 @@ const MOVIES = [
 export default class MovieList extends React.Component {
 
     render() {
-        const movies = MOVIES.map(movie => <Movie data={movie} />);
         return (
             <ul className="thumbnails list-unstyled">
-                {movies}
+                {MOVIES.map(movie => <Movie data={movie} />)}
             </ul>
         );
     }
